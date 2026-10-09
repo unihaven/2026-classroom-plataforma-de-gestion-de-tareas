@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  gap: 30px;
+  background-color: rgb(220, 214, 247, 0.5);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #000;
+  z-index: 2;
+
+  .username {
+    letter-spacing: 2px;
+    padding: 3px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(90deg, rgb(94, 114, 235) 0%, rgb(255, 145, 144) 56%, rgb(254, 193, 149) 100%);
+    color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 10px;
+  }
+}

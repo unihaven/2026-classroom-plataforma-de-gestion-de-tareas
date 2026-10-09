@@ -1,0 +1,62 @@
+.project-card {
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 700px;
+  transition: all 0.2s ease;
+  z-index: 0;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--black);
+    padding: 10px;
+    background-color: var(--primary);
+    word-spacing: 5px;
+
+    .priority-number {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 15px;
+
+      .link {
+        text-decoration: none;
+        display: flex;
+        padding: 5px;
+        border-radius: 20%;
+        color: var(--black);
+
+        &:hover {
+          background-color: rgba(166, 177, 225, 0.5);
+          cursor: pointer;
+        }
+
+        .svg-button {
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

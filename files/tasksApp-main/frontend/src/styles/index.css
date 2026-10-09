@@ -1,0 +1,96 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg: #f4eeff;
+  --primary: #dcd6f7;
+  --secondary: #a6b1e1;
+  --dark: #372948;
+  --black: #251b37;
+  --purple: rgb(150, 114, 218);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-row--centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column--centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.blue-button {
+  color: #fff;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--black);
+  transition: 0.2s;
+  margin: 20px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--black);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--secondary);
+    box-shadow: 0.25rem 0.25rem var(--black);
+  }
+
+  &:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+}
+
+.blue-button--logout {
+  color: #fff;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 5px 30px;
+  background: var(--black);
+  transition: 0.2s;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--black);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--secondary);
+    box-shadow: 0.25rem 0.25rem var(--black);
+  }
+
+  &:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+}
+
